@@ -13,7 +13,7 @@ export const StudentList = () => {
 
     return (
         <div className="row col m-4 p-3 bg-secondary-subtle shadow-lg rounded ">
-
+             
         </div>
     )
 }
