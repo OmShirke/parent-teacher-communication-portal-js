@@ -2,47 +2,46 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { useEffect, useState } from "react"
 import "../styles.css"
 
-export const NotificationList = ({ }) => {
-    const [listOfNotifications, SetlistOfNotifications] = useState([{
-        id: 1,
-        data: "mesos"
-    },
-    {
-        id: 2,
-        data: "eskjf;dla"
-    },
-    {
-        id: 4,
-        data: "asjdf;kasdfj"
-    }])
-
-
-    const listOfNotificationsDiv = listOfNotifications.map(notification =>
-        <div key={notification.id} className="m-1 p-3 bg-dark shadow-lg rounded-5 text-white ">
-            <div className="row ">
-                <img src="blank_profile_picture.webp" className="img-fluid col-3 rounded-circle" />
-                <div className="col">
-                    {notification.data}
+export const NotificationList = ({ listOfNotifications }) => {
+    return (
+        <div className="fixed-left">
+            <div className="card mt-4">
+                <div className="card-header bg-secondary text-white">
+                    <h4 className="mb-0">Notifications</h4>
+                </div>
+                <div className="card-body">
+                    {listOfNotifications && listOfNotifications.length > 0 ? (
+                        listOfNotifications.map((notification) => (
+                            <div
+                                key={notification.id}
+                                className="notification-item bg-dark text-white mb-3 p-3 rounded"
+                            >
+                                <div className="row align-items-center">
+                                    <div className="col-auto">
+                                        <img
+                                            src="blank_profile_picture.webp"
+                                            className="profile-image rounded-circle"
+                                            alt="Profile"
+                                        />
+                                    </div>
+                                    <div className="col">
+                                        <p className="mb-0">{notification.data}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        <div className="text-center">No notifications</div>
+                    )}
                 </div>
             </div>
         </div>
-    )
-    return (
-        <div className="list-group-item col-1 m-4 p-4 bg-secondary-subtle w-25 shadow-lg rounded align-items-center">
-            <div>
-                Notifications
-            </div>
-            <div className="container">
-                {listOfNotificationsDiv}
-                {/* <div key={2} className="m-1 p-3 bg-primary shadow-lg rounded-5 text-white ">
-                    <div className="row ">
-                        <img src="blank_profile_picture.webp" className="img-fluid col-3 rounded-circle" />
-                        <div className="col">
-                            {"jkbjbhbhn"}
-                        </div>
-                    </div>
-                </div> */}
-            </div>
-        </div>
-    )
-}
+    );
+};
+
+
+
+
+
+
+

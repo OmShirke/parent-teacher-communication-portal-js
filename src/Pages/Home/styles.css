@@ -1,5 +1,73 @@
-.cards{
+.row col m-4 p-3 bg-secondary-subtle shadow-lg rounded{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 3%;
+    width: 40%;
+    height: 50%;
+    margin-top: 10%;
+    /* margin-right: 8%; */
+    padding-right: 0px;
+    margin-left: 6%;
+    background-size: cover;
+    padding-left: 0%;
 
+}
+.height{
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+}
+#h1{
+    text-align: center;
+}
+
+
+.id{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #eeeeee;
+}
+.opaque{
+    background-color: black;
+}
+.fixed-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%; /* Adjust as needed */
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
+  z-index: 1000; /* Adjust to ensure it's above other content */
+}
+.fixed-left {
+  position: fixed;
+  top: 5%;
+  left: 0;
+  height: 100%;
+  width: 30%; /* 1/4th of the page width */
+  overflow-y: auto; /* Add scrollbar if content exceeds height */
+  z-index: 1000; /* Adjust to ensure it's above other content */
+}
+
+.notification-item {
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+}
+
+.page-content {
+  margin-left: 30%; /* Ensure content starts from right of fixed-left */
+}
+.card-body{
+    margin-top: 0%;
 }

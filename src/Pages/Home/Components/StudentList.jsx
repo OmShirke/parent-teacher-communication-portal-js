@@ -7,36 +7,32 @@ export const StudentList = () => {
     const sendMessage = () => {
 
     }
-    const divStyle = {
-        height: "calc(100% - 100px)"
-    }
-    const [listOfNotifications, SetlistOfNotifications] = useState([{
-        id: 1,
-        data: "mesos"
-    },
-    {
-        id: 2,
-        data: "eskjf;dla"
-    },
-    {
-        id: 4,
-        data: "asjdf;kasdfj"
-    }])
-
-    const listOfNotificationsDiv = listOfNotifications.map(notification =>
-        <div key={notification.id} className="m-1 p-3 bg-dark shadow-lg rounded-5 text-white ">
-            <div className="row ">
-                <img src="blank_profile_picture.webp" className="img-fluid col-3 rounded-circle" />
-                <div className="col">
-                    {notification.data}
+    return (
+        <div className="container" style={{ transform: 'translateX(20%) translateY(3%) scaleY(0.9)', backgroundColor: 'lightblue' }}>
+            <div className="row justify-content-center mt-4">
+                <div className="col-md-4" style={{ marginRight: '10%' }}>
+                    <div className="card bg-light shadow rounded">
+                        <img src="./profile.jpg" className="card-img-top" alt="Profile" />
+                        <div className="card-body" style={{ backgroundColor: '#5D707F' }}>
+                            <h5 className="card-title" style={{ color: 'white' }}>Mr. Om Shrike</h5>
+                            <p className="card-text" style={{ color: 'white' }}>Year: 3rd</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="card bg-light shadow rounded">
+                        <img src="./profile.jpg" className="card-img-top" alt="Profile" />
+                        <div className="card-body" style={{ backgroundColor: '#5D707F' }}>
+                            <h5 className="card-title" style={{ color: 'white' }}>Mr. Om Shrike</h5>
+                            <p className="card-text" style={{ color: 'white' }}>Year: 3rd</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>)
-
-    return (
-        <div className="row col m-4 p-3 bg-secondary-subtle shadow-lg rounded ">
-
         </div>
+    );
 
-    )
+
+
+
 }
