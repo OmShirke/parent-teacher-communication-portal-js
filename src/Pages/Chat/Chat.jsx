@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { useEffect, useState } from "react"
 import { FriendsList } from "./Components/ChatList"
+import { ChatSection } from "./Components/ChatSection"
 
 export const ChatPage = (/*{UserId, UserName}*/) => {
     const divstyleCalcHeight = {
@@ -8,14 +9,10 @@ export const ChatPage = (/*{UserId, UserName}*/) => {
     }
 
     return (
-            <div>
-                <div className="container text-center bg-white bg-gradient min-vw-100 min-vh-100">
-                    <div className="row row-col-4  min-vw-100" style={divstyleCalcHeight}>
-                        <FriendsList selectChatId={2} UserId={2} /*receivedData={ApiData}*/ />
-                        <ChatSection selectedChatId={2} UserId={3} /* receivedData={ApiData} */ />
-                    </div>
-                </div>
+        <div className="row row-col-4  min-vw-100" style={divstyleCalcHeight}>
+            <FriendsList selectChatId={2} UserId={2} /*receivedData={ApiData}*/ />
+            <ChatSection selectedChatId={2} UserId={3} /* receivedData={ApiData} */ />
+        </div>
 
-            </div>
     )
 }
