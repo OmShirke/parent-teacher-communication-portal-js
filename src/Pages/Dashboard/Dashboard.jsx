@@ -17,7 +17,7 @@ export const Dashboard = () => {
     };
 
     return (
-        <div className="row">
+        <div className="row " style={{ minWidth:"100vw", minHeight:"50vw"}}>
             <div className="col-md-6 mb-4">
                 <div className="flex-fill" style={divStyle}>
                     <Bar
@@ -38,7 +38,7 @@ export const Dashboard = () => {
                 </div>
             </div>
             <div className="col-md-6 mb-4">
-                <div className="flex-fill" style={divStyle}>2</div>
+                <div className="flex-fill " style={divStyle}>2</div>
             </div>
             <div className="col-md-6">
                 <div className="flex-fill" style={divStyle}>3</div>
