@@ -45,23 +45,9 @@ export const StudentList = () => {
         //     </div>
 
         // </div>
-
-        <div className="rounded d-flex ">
-            <div key={3} className="m-1 p-3 bg-dark shadow-lg rounded-5 text-white ">
-                <div className="row ">
-                    <img src="blank_profile_picture.webp" className="img-fluid col-3 rounded-circle" />
-                    <div className="col">
-                        {"notification.data"}
-                    </div>
-                </div>
-            </div>
-            <div key={3} className="m-1 p-3 bg-dark shadow-lg rounded-5 text-white ">
-                <div className="row ">
-                    <img src="blank_profile_picture.webp" className="img-fluid col-3 rounded-circle" />
-                    <div className="col">
-                        {"notification.data"}
-                    </div>
-                </div>
+        <div className="container">
+            <div className="cards">
+                student
             </div>
         </div>
 
