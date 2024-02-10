@@ -24,7 +24,8 @@ export function LoginTeacher() {
 }
 export function LoginParent() {
     return (
-        <div className="container" id="container">
+
+        <div className="container " id="container">
             <div className={`form-container sign-in`}>
                 <form>
                     <h1>Sign In</h1>
